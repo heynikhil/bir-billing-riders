@@ -38,7 +38,7 @@ export default function Services() {
               </p>
 
               {/* Features */}
-              <ul className="space-y-3">
+              <ul className="space-y-3 mb-6">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
@@ -46,6 +46,33 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
+
+              {/* Pricing */}
+              <div className="mt-auto pt-4 border-t border-gray-100">
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-gray-600">Daily</span>
+                    <span className="font-bold text-sky-600">{service.pricing.daily}</span>
+                  </div>
+                  {service.pricing.weekly && (
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Weekly</span>
+                      <span className="font-bold text-sky-600">{service.pricing.weekly}</span>
+                    </div>
+                  )}
+                  {service.pricing.perKm && (
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Per Km</span>
+                      <span className="font-bold text-sky-600">{service.pricing.perKm}</span>
+                    </div>
+                  )}
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-gray-600">Deposit</span>
+                    <span className="font-semibold text-gray-700">{service.pricing.deposit}</span>
+                  </div>
+                  <p className="text-xs text-gray-500 italic mt-2">{service.pricing.extraInfo}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Phone, Clock, CreditCard } from "lucide-react";
+import { MapPin, Phone, Clock, CreditCard, Mail } from "lucide-react";
 import { businessInfo, contactInfo, whatsappMessage } from "@/config/content";
 
 export default function Contact() {
@@ -46,6 +46,24 @@ export default function Contact() {
                     className="text-sky-600 hover:text-sky-700 font-medium"
                   >
                     {businessInfo.phone}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-sky-100 hover:shadow-xl transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sky-400 to-indigo-600 rounded-xl flex items-center justify-center">
+                  <Mail className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-1">Email</h3>
+                  <a
+                    href={`mailto:${businessInfo.email}`}
+                    className="text-sky-600 hover:text-sky-700 font-medium break-all"
+                  >
+                    {businessInfo.email}
                   </a>
                 </div>
               </div>

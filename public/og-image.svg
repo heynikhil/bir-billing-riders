@@ -1,0 +1,53 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38BDF8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FACC15;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FCD34D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative Circles -->
+  <circle cx="100" cy="100" r="150" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1100" cy="530" r="200" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="600" cy="315" r="250" fill="rgba(255,255,255,0.05)"/>
+  
+  <!-- Main Content -->
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="white" text-anchor="middle">
+    Bir Billing Riders
+  </text>
+  
+  <!-- Hindi Tagline -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="48" fill="url(#textGradient)" text-anchor="middle">
+    सफर आपका, बाइक हमारी।
+  </text>
+  
+  <!-- English Tagline -->
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="42" fill="rgba(255,255,255,0.9)" text-anchor="middle">
+    Ride Free. Feel Bir.
+  </text>
+  
+  <!-- Services -->
+  <text x="600" y="430" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle">
+    🛵 Scooty | 🏍️ Bike | 🚕 Taxi Rentals
+  </text>
+  
+  <!-- Location Badge -->
+  <rect x="400" y="470" width="400" height="60" rx="30" fill="rgba(255,255,255,0.2)"/>
+  <text x="600" y="510" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="600">
+    📍 Bir Billing, Himachal Pradesh
+  </text>
+  
+  <!-- Trust Badge -->
+  <text x="600" y="570" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.8)" text-anchor="middle">
+    Trusted since 2018 • 1000+ Happy Riders
+  </text>
+</svg>

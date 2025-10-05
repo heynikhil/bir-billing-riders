@@ -9,6 +9,7 @@ export const businessInfo = {
   location: "Near Bir Bus Stand, Himachal Pradesh",
   phone: "+91-88949-12338",
   whatsapp: "+918894912338", // No spaces/dashes for WhatsApp link
+  email: "contact@birbillingriders.com",
   instagram: "@birbillingrider",
   instagramUrl: "https://instagram.com/birbillingrider",
   timing: "7 AM – 9 PM",
@@ -20,7 +21,7 @@ export const seoData = {
     "Rent self-drive scooties, bikes, and taxis in Bir Billing, Himachal Pradesh. Local experts, easy booking via WhatsApp. Trusted since 2018.",
   keywords:
     "scooty on rent in Bir Billing, bike rental in Bir Billing, taxi in Bir, Bir Billing vehicle rental, self-drive scooty Bir, bike rental Himachal Pradesh",
-  ogImage: "/og-image.jpg", // You can add this later
+  ogImage: "/og-image.svg",
 };
 
 export const whatsappMessage = encodeURIComponent(
@@ -55,6 +56,12 @@ export const services = [
     title: "Scooty Rentals",
     description: "Perfect for solo travelers & couples. Easy rides on smooth roads.",
     features: ["Self-drive", "2 helmets included", "Pick-up anywhere"],
+    pricing: {
+      daily: "₹600-800",
+      weekly: "₹3,500-5,000",
+      deposit: "₹1,000",
+      extraInfo: "Activa, Dio, Access available"
+    }
   },
   {
     id: "bike",
@@ -62,6 +69,12 @@ export const services = [
     title: "Bike Rentals",
     description: "Thrill on the hills. For adventure seekers who love mountain roads.",
     features: ["Powerful engines", "Safety gear", "Free roadside support"],
+    pricing: {
+      daily: "₹1,200-2,500",
+      weekly: "₹7,000-15,000",
+      deposit: "₹2,000",
+      extraInfo: "Classic, Hunter, Meteor, Himalayan 411/450"
+    }
   },
   {
     id: "taxi",
@@ -69,6 +82,12 @@ export const services = [
     title: "Taxi Services",
     description: "Comfortable rides for groups & senior citizens with polite drivers.",
     features: ["Group-friendly", "Senior-friendly", "Airport/station pickup"],
+    pricing: {
+      daily: "₹2,500-4,000",
+      perKm: "₹15-20/km",
+      deposit: "Nil",
+      extraInfo: "Sedan, SUV, Tempo Traveller"
+    }
   },
 ];
 
@@ -79,6 +98,139 @@ export const addOns = [
   "Emergency support 24/7",
 ];
 
+export const vehicles = [
+  {
+    id: "activa",
+    name: "Honda Activa",
+    category: "Scooty",
+    price: "₹600/day",
+    specs: {
+      engine: "110cc",
+      mileage: "45-50 km/l",
+      seating: "2 persons",
+      fuelType: "Petrol"
+    },
+    features: ["Automatic", "Comfortable seat", "Good mileage", "Easy to ride"],
+    available: true,
+    badge: "Most Popular"
+  },
+  {
+    id: "access",
+    name: "Suzuki Access",
+    category: "Scooty",
+    price: "₹600/day",
+    specs: {
+      engine: "125cc",
+      mileage: "40-45 km/l",
+      seating: "2 persons",
+      fuelType: "Petrol"
+    },
+    features: ["Powerful engine", "Large under-seat storage", "LED lights", "Smooth ride"],
+    available: true
+  },
+  {
+    id: "classic-350",
+    name: "Royal Enfield Classic 350",
+    category: "Bike",
+    price: "₹1,200/day",
+    specs: {
+      engine: "349cc",
+      mileage: "35-40 km/l",
+      seating: "2 persons",
+      fuelType: "Petrol"
+    },
+    features: ["Iconic design", "Perfect for highways", "Comfortable ride", "Premium feel"],
+    available: true,
+    badge: "Best Seller"
+  },
+  {
+    id: "himalayan-411",
+    name: "Royal Enfield Himalayan 411",
+    category: "Bike",
+    price: "₹1,500/day",
+    specs: {
+      engine: "411cc",
+      mileage: "30-35 km/l",
+      seating: "2 persons",
+      fuelType: "Petrol"
+    },
+    features: ["Adventure ready", "Off-road capable", "Long seat", "Durable"],
+    available: true,
+    badge: "Adventure"
+  },
+  {
+    id: "himalayan-450",
+    name: "Royal Enfield Himalayan 450",
+    category: "Bike",
+    price: "₹2,500/day",
+    specs: {
+      engine: "452cc",
+      mileage: "30-33 km/l",
+      seating: "2 persons",
+      fuelType: "Petrol"
+    },
+    features: ["Latest model", "Advanced tech", "Powerful engine", "Premium adventure"],
+    available: true,
+    badge: "New Arrival"
+  },
+  {
+    id: "hunter-350",
+    name: "Royal Enfield Hunter 350",
+    category: "Bike",
+    price: "₹1,200/day",
+    specs: {
+      engine: "349cc",
+      mileage: "35-40 km/l",
+      seating: "2 persons",
+      fuelType: "Petrol"
+    },
+    features: ["Retro style", "Nimble handling", "City-friendly", "Modern features"],
+    available: true
+  },
+  {
+    id: "meteor-350",
+    name: "Royal Enfield Meteor 350",
+    category: "Bike",
+    price: "₹1,500/day",
+    specs: {
+      engine: "349cc",
+      mileage: "35-40 km/l",
+      seating: "2 persons",
+      fuelType: "Petrol"
+    },
+    features: ["Cruiser style", "Comfortable ride", "Bluetooth connectivity", "Premium touring"],
+    available: true
+  },
+  {
+    id: "duke",
+    name: "KTM Duke 200/250",
+    category: "Bike",
+    price: "₹1,200/day",
+    specs: {
+      engine: "200-250cc",
+      mileage: "30-35 km/l",
+      seating: "2 persons",
+      fuelType: "Petrol"
+    },
+    features: ["Sporty design", "Quick acceleration", "Lightweight", "Modern tech"],
+    available: true
+  },
+  {
+    id: "sedan",
+    name: "Sedan (Swift Dzire / Etios)",
+    category: "Taxi",
+    price: "₹2,500/day",
+    specs: {
+      engine: "1200cc",
+      mileage: "18-20 km/l",
+      seating: "4+1 persons",
+      fuelType: "Petrol/Diesel"
+    },
+    features: ["AC", "Music system", "Spacious", "Comfortable"],
+    available: true
+  }
+];
+
 export const whyChooseUs = [
   {
     title: "Local Experts",
@@ -87,7 +239,7 @@ export const whyChooseUs = [
   },
   {
     title: "Easy Payments",
-    description: "UPI, Axis POS (cards), or cash. Pay however you like.",
+    description: "UPI, or cash. Pay however you like.",
     icon: "CreditCard",
   },
   {
@@ -196,5 +348,5 @@ export const faqs = [
 export const contactInfo = {
   title: "Ready to Ride? Let's Roll!",
   subtitle: "Book now via WhatsApp or give us a call. We're just a message away.",
-  paymentMethods: ["UPI", "Axis POS (Cards)", "Cash"],
+  paymentMethods: ["UPI", "Cash"],
 };

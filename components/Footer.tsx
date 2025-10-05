@@ -1,6 +1,7 @@
 import { Instagram } from "lucide-react";
 import { businessInfo } from "@/config/content";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -49,6 +50,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#gallery" className="hover:text-sky-300 transition-colors">
+                  Our Fleet
+                </a>
+              </li>
+              <li>
                 <a href="#why-us" className="hover:text-sky-300 transition-colors">
                   Why Choose Us
                 </a>
@@ -62,6 +68,11 @@ export default function Footer() {
                 <a href="#contact" className="hover:text-sky-300 transition-colors">
                   Contact
                 </a>
+              </li>
+              <li>
+                <Link href="/terms" className="hover:text-sky-300 transition-colors">
+                  Terms & Conditions
+                </Link>
               </li>
             </ul>
           </div>

@@ -20,6 +20,23 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* Decorative Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Floating Vehicle Icons */}
+        <div className="absolute top-1/4 left-[10%] text-6xl opacity-20 animate-float">🛵</div>
+        <div className="absolute top-1/3 right-[15%] text-7xl opacity-15 animate-float-delayed">🏍️</div>
+        <div className="absolute bottom-1/4 left-[15%] text-5xl opacity-20 animate-float-slow">🚕</div>
+        <div className="absolute top-1/2 right-[10%] text-4xl opacity-25 animate-float">⛰️</div>
+        <div className="absolute bottom-1/3 right-[20%] text-5xl opacity-20 animate-float-delayed">🪂</div>
+        
+        {/* Abstract Shapes */}
+        <div className="absolute top-20 left-[5%] w-32 h-32 border-4 border-white/10 rounded-full animate-spin-slow"></div>
+        <div className="absolute bottom-32 right-[8%] w-40 h-40 border-4 border-white/10 rounded-lg rotate-45 animate-pulse"></div>
+        
+        {/* Road Lines Effect */}
+        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black/10 to-transparent"></div>
+      </div>
+
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="space-y-8">
@@ -69,10 +86,39 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Price Tag */}
-          <div className="pt-4">
-            <div className="inline-block bg-yellow-400 text-indigo-900 px-6 py-3 rounded-full font-bold shadow-lg">
-              💰 {hero.priceTag}
+          {/* Quick Stats */}
+          <div className="pt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20">
+              <div className="text-3xl font-bold text-white">₹600+</div>
+              <div className="text-sm text-white/80">Starting Price</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20">
+              <div className="text-3xl font-bold text-white">18+</div>
+              <div className="text-sm text-white/80">Vehicles</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20">
+              <div className="text-3xl font-bold text-white">24/7</div>
+              <div className="text-sm text-white/80">Support</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20">
+              <div className="text-3xl font-bold text-white">1000+</div>
+              <div className="text-sm text-white/80">Happy Riders</div>
+            </div>
+          </div>
+
+          {/* Quick Features */}
+          <div className="pt-6 flex flex-wrap justify-center gap-3">
+            <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium border border-white/30">
+              ✓ Free Pickup & Drop
+            </div>
+            <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium border border-white/30">
+              ✓ Helmets Included
+            </div>
+            <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium border border-white/30">
+              ✓ Easy UPI Payment
+            </div>
+            <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium border border-white/30">
+              ✓ No Hidden Charges
             </div>
           </div>
         </div>

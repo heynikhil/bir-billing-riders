@@ -66,10 +66,85 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Schema.org structured data for Local Business
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": businessInfo.name,
+    "image": "/logo.png",
+    "@id": "https://birbillingriders.com",
+    "url": "https://birbillingriders.com",
+    "telephone": businessInfo.phone,
+    "email": businessInfo.email,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Bir Bus Stand",
+      "addressLocality": "Bir",
+      "addressRegion": "Himachal Pradesh",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.0504,
+      "longitude": 76.7241
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "07:00",
+      "closes": "21:00"
+    },
+    "priceRange": "₹₹",
+    "description": seoData.description,
+    "foundingDate": "2018",
+    "sameAs": [
+      businessInfo.instagramUrl
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "1000"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Vehicle Rental Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Scooty Rental",
+            "description": "Self-drive scooties for easy city rides"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Bike Rental",
+            "description": "Powerful bikes for mountain adventures"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Taxi Service",
+            "description": "Comfortable taxi rides with professional drivers"
+          }
+        }
+      ]
+    }
+  };
+
   return (
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/logo.png" type="image/png" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
       </head>
       <body
         className={`${poppins.variable} ${inter.variable} font-sans antialiased`}
