@@ -10,8 +10,8 @@ export const businessInfo = {
   phone: "+91-88949-12338",
   whatsapp: "+918894912338", // No spaces/dashes for WhatsApp link
   email: "contact@birbillingriders.com",
-  instagram: "@birbillingrider",
-  instagramUrl: "https://instagram.com/birbillingrider",
+  instagram: "@birbillingriders",
+  instagramUrl: "https://instagram.com/birbillingriders",
   timing: "7 AM – 9 PM",
 };
 

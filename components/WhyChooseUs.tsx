@@ -11,13 +11,14 @@ export default function WhyChooseUs() {
             Why Choose Us?
           </h2>
           <p className="text-xl text-gray-600 italic">
-            "You ride. We handle the boring stuff."
+            &ldquo;You ride. We handle the boring stuff.&rdquo;
           </p>
         </div>
 
         {/* Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {whyChooseUs.map((item, idx) => {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const IconComponent = (LucideIcons as any)[item.icon];
             
             return (

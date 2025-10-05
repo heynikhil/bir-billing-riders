@@ -66,7 +66,7 @@ export default function FAQ() {
               Still Got Questions?
             </h3>
             <p className="text-gray-600 mb-6">
-              No worries! Message us on WhatsApp and we'll help you out instantly.
+              No worries! Message us on WhatsApp and we&apos;ll help you out instantly.
             </p>
             <a
               href={whatsappLink}

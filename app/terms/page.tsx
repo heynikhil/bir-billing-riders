@@ -38,7 +38,7 @@ export default function TermsPage() {
             <div className="space-y-3 text-gray-700">
               <p>• You must be at least 18 years old with a valid driving license to rent two-wheelers.</p>
               <p>• A valid driving license is <strong>mandatory</strong> for self-drive scooties and bikes.</p>
-              <p>• <strong>Learner's Licenses are NOT accepted</strong> for vehicle rental.</p>
+              <p>• <strong>Learner&apos;s Licenses are NOT accepted</strong> for vehicle rental.</p>
               <p>• You must provide original address proof (Aadhaar card, Voter ID, or Passport) at the time of pickup.</p>
               <p>• A copy of your Driving License will be deposited and returned upon vehicle return.</p>
               <p>• If you fail to produce these documents, we reserve the right to deny the booking without refund.</p>
@@ -60,7 +60,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Vehicle Usage Rules</h2>
             <div className="space-y-3 text-gray-700">
-              <p>• <strong>Tripling (3 people on a two-wheeler) is strictly prohibited.</strong> If found with 3 people, you'll be charged double the rent.</p>
+              <p>• <strong>Tripling (3 people on a two-wheeler) is strictly prohibited.</strong> If found with 3 people, you&apos;ll be charged double the rent.</p>
               <p>• Both helmets are <strong>compulsory</strong> while riding. Please return the same helmets provided.</p>
               <p>• Helmets lost or damaged will incur a charge of <strong>₹1,000 per helmet</strong>.</p>
               <p>• Fuel consumption is your responsibility. Please refuel as needed during your rental period.</p>
@@ -99,7 +99,7 @@ export default function TermsPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Breakdown & Support</h2>
             <div className="space-y-3 text-gray-700">
               <p>• If the vehicle breaks down due to mechanical issues, call or WhatsApp us immediately.</p>
-              <p>• We'll either fix it on-site or provide a replacement vehicle ASAP.</p>
+              <p>• We&apos;ll either fix it on-site or provide a replacement vehicle ASAP.</p>
               <p>• <strong>No extra charges for mechanical breakdowns</strong> (not caused by user negligence).</p>
               <p>• Roadside assistance is available during business hours (7 AM – 9 PM).</p>
             </div>
@@ -110,7 +110,7 @@ export default function TermsPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Pickup & Drop Service</h2>
             <div className="space-y-3 text-gray-700">
               <p>• We offer <strong>free pickup and drop-off</strong> within Bir, Billing, and nearby areas.</p>
-              <p>• Share your location on WhatsApp, and we'll deliver the vehicle to you.</p>
+              <p>• Share your location on WhatsApp, and we&apos;ll deliver the vehicle to you.</p>
               <p>• For locations beyond our service area, additional charges may apply.</p>
             </div>
           </section>

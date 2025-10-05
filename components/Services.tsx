@@ -11,7 +11,7 @@ export default function Services() {
             Our Services
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Whether you're riding solo, seeking thrills, or traveling with family — we've got you covered.
+            Whether you&apos;re riding solo, seeking thrills, or traveling with family — we&apos;ve got you covered.
           </p>
         </div>
 
