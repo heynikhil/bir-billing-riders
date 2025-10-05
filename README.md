@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏍 Bir Billing Riders Website
 
-## Getting Started
+A modern, mobile-first, single-page website for **Bir Billing Riders** — a local vehicle rental service in Bir, Himachal Pradesh.
 
-First, run the development server:
+## 🚀 Features
+
+- ✅ **Next.js 14** with App Router
+- ✅ **TypeScript** for type safety
+- ✅ **Tailwind CSS** for beautiful styling
+- ✅ **No images** — CSS gradients & icons only
+- ✅ **SEO optimized** with meta tags
+- ✅ **Mobile-first** responsive design
+- ✅ **WhatsApp & Call** integration
+- ✅ **Comprehensive FAQ** section
+- ✅ **Google Maps** embed
+- ✅ **Smooth scrolling** navigation
+
+## 📦 Installation
+
+```bash
+npm install
+```
+
+## 🏃‍♂️ Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔧 Configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Edit Content
 
-## Learn More
+All website content is in **one file** for easy editing:
 
-To learn more about Next.js, take a look at the following resources:
+```
+config/content.ts
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Update this file to change:
+- ✏️ Phone numbers & WhatsApp
+- ✏️ Business details
+- ✏️ Services & pricing
+- ✏️ Testimonials
+- ✏️ FAQs
+- ✏️ Social media links
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Important: Update Before Going Live
 
-## Deploy on Vercel
+1. **Phone Number**: Replace `+91-XXXXX-XXXXX` with your actual number
+2. **WhatsApp**: Replace `+91XXXXXXXXXX` (no spaces/dashes)
+3. **Google Maps**: Update the embed URL with your exact location
+4. **Domain**: Update in `app/layout.tsx` (Line ~37)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Build for Production
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+```
+
+## 🚢 Deploy
+
+### Vercel (Recommended)
+1. Push to GitHub
+2. Import to Vercel
+3. Deploy automatically
+
+### Netlify
+```bash
+npm run build
+# Deploy the `.next` folder
+```
+
+## 📱 Contact Integration
+
+- **WhatsApp**: Click-to-chat with pre-filled message
+- **Phone**: Direct call on mobile devices
+- **Floating buttons**: Always visible on all pages
+
+## 🎨 Color Scheme
+
+- **Primary**: Sky Blue `#38BDF8`
+- **Secondary**: Indigo `#4F46E5`
+- **Accent**: Yellow `#FACC15`
+
+## 📄 SEO Setup
+
+The website is SEO-ready with:
+- Meta tags
+- OpenGraph tags
+- Twitter cards
+- Robots.txt
+- Schema markup (can be added)
+
+### Add Google Analytics (Optional)
+
+In `app/layout.tsx`, add:
+
+```tsx
+<Script
+  src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+  strategy="afterInteractive"
+/>
+```
+
+## 📞 Support
+
+For questions or customization help, contact the developer.
+
+---
+
+**Built with ❤️ for Bir Billing Riders**
+
+*Ride Free. Feel Bir. | सफर आपका, बाइक हमारी।*# bir-billing-riders
